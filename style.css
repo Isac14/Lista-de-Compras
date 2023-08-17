@@ -1,0 +1,47 @@
+body {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#formItens {
+    height: 30px;
+    width: 50%;
+}
+
+#btnAdd {
+    margin: 0;
+    height: 36px;
+}
+
+.container {
+    display: inline;
+    background-color: bisque;
+    width: 60vw;
+    height: 70vh;
+}
+
+.centralizarDivItens {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+}
+
+.itens {
+    overflow: scroll;
+    margin-top: 40px;
+    width: 90%;
+    border: 1px solid;
+    min-height: 50px;
+    max-height: 50%;
+}
