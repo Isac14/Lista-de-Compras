@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     overflow: hidden;
     height: 100vh;
@@ -14,34 +18,38 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
 #formItens {
-    height: 30px;
-    width: 50%;
+    height: 35px;
+    width: 100%;
 }
 
 #btnAdd {
     margin: 0;
-    height: 36px;
+    height: 35px;
 }
 
 .container {
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: bisque;
     width: 60vw;
-    height: 70vh;
+    height: 60vh;
+    box-sizing: border-box;
+    /* overflow: scroll; */
 }
 
-.centralizarDivItens {
-    display: flex;
-    justify-content: center;
-    height: 90%;
-}
-
-.itens {
-    overflow: scroll;
-    margin-top: 40px;
-    width: 90%;
+.divItens {
+    margin: 40px 0;
+    min-width: 50%;
+    height: 80%;
     border: 1px solid;
-    min-height: 50px;
-    max-height: 50%;
+    overflow-y: scroll;
 }
