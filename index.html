@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,22 +10,20 @@
     <body>
         <main class="container">
             <div class="header">
-                <h1>Carrinho</h1>
+                <h1>Carrinho de Compras</h1>
+                <h3>
+                    Vai ao mercado? <br />
+                    Que tal anotar todos os itens que você vai precisar para
+                    facilitar na hora da compra?
+                </h3>
                 <form>
-                    <input type="text" id="formItens" />
-                    <button id="btnAdd">Adicionar</button>
+                    <input autocomplete="off" type="text" id="formItens" />
+                    <button type="button" id="btnAdd">Adicionar</button>
                 </form>
             </div>
 
-            <div class="divItens">
-                <p>pimba</p>
-                <p>pimba</p>
-                <p>pimba</p>
-                <p>pimba</p>
-                <p>pimba</p>
-                <p>pimba</p>
-                <p>pimba</p>
-            </div>
+            <div class="divItens"></div>
+            <button type="reset" id="btnClean">Limpar</button>
         </main>
         <script src="./script.js"></script>
     </body>
