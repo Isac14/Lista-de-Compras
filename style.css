@@ -32,6 +32,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 h1 {
@@ -78,11 +79,17 @@ form {
     background-color: #d3e7f6;
     border: none;
     border-radius: 9px;
+    user-select: none;
 }
 
 li {
     margin-left: 20px;
     list-style: decimal;
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
 }
 
 li::first-letter {
